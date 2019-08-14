@@ -78,6 +78,23 @@ nav {
   flex-direction: row;
 }
 
-.qb {
-  width: 100px;
+#questionBoxes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%
 }
+.qb {
+  width: 25%;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+}
+
+.qbox {
+  display: flex;
+  width: 100%
+  justify-content: space-evenly;
+  
+}
+
+

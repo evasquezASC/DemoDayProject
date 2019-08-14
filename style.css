@@ -1,7 +1,7 @@
 
 .container {
   background-image: url("https://tnuqq21kt870t8n1egkbrmbr-wpengine.netdna-ssl.com/wp-content/uploads/2014/10/Laptops_CH.jpg");
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,9 @@
   margin-right: 10%;
 }
 
-
+body {
+  width: 100%;
+}
 
 .placeHolder {
   color: white;
@@ -224,12 +226,12 @@ p {
 
 /* Add a blue color to the author */
 .author {
-  color: #ffa07a;
+  color: #FFF1D0;
 }
 
 .mySlides {
   color: white;
-  background-color: #944bbb;
+  background-color: #07A0C3;
 }
 .allMessages {
   border: 2px solid;
@@ -239,17 +241,22 @@ p {
   display: grid;
   grid-auto-rows: min-content;
   grid-gap: 5px;
-}
+ }
 h1,
 p {
   padding: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 #dailyQuotes {
   display: flex;
   align-content: center;
-  /* background-size: cover;
-  background-repeat: no-repeat; */
+  padding-bottom: 70px;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat; 
+
 }
 
 .help {
@@ -326,34 +333,59 @@ p {
 }
 
 /*reference page*/
-.programs {
-  display: flex;
-  margin-right: 430px;
-  color: white;
-}
 
 #prisonPrograms {
-  padding: 20px;
-  background-color: #004d61;
-  border: solid rgb(0, 132, 255) 5px;
-  height: 400px;
+  margin: 20px;
+  border: solid blue 2px;
 }
 
-.programRow {
+#programrow1 {
+  height: 100%;
   display: flex;
   width: 90%;
-  padding: 5%;
-  background-color: white;
+  padding: 2.5%;
+  background-color: mintcream;
+}
+
+#programrow2 {
+  height: 100%;
+  display: flex;
+  width: 90%;
+  padding: 2.5%;
+  background-color: mintcream;
+}
+
+#programrow3 {
+  height: 100%;
+  display:flex;
+  width: 90%;
+  padding: 2.5%;
+  background-color: mintcream;
+}
+
+#PP {
+  align-content: center;
+  color: darkorange;
 }
 .programs {
-  width: 50%;
+  display: flex;
+  margin: 20px;
+  width: 40%;
+  padding: 5%;
   align-items: center;
-  background-color: blue;
+  background-color: orange;
+  color: white;
+
 }
 
 .programLogo {
-  height: 60px;
+  height: 100px;
   width: 200px;
+}
+
+#programLogo {
+  height: 80px;
+  width: 400px;
 }
 
 /*profileQuiz*/

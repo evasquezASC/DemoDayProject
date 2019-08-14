@@ -54,8 +54,10 @@ function onClickSU() {
   if (pass.value == cPass.value) {
     accounts.push(new Account(user.value, pass.value));
     alert("Sign Up Successful");
-  } else if (user.value == " " || pass.value == " " || cPass.value == " "){
-    alert("Your Confirm Password does not match your Password or you need a valid username");
+  } else if (user.value == " " || pass.value == " " || cPass.value == " ") {
+    alert(
+      "Your Confirm Password does not match your Password or you need a valid username"
+    );
   }
 }
 
@@ -108,7 +110,7 @@ function getRandomItem(array) {
 
 function makeElement() {
   const dailyQuotes = document.createElement("p");
-  dailyQuotes.innerText = getRandomItem(quotes);
+  dailyQuotes.innerHTML = `<br/><br/>${getRandomItem(quotes)}`;
   dailyQuotes.style.backgroundColor = "black";
   dailyQuotes.style.color = "white";
   dailyQuotes.style.opacity = "0.6";
